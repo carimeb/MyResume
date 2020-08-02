@@ -6,6 +6,7 @@
 \usepackage{setspace}
 \usepackage{pifont} %to little rating stars
 \usepackage{fontawesome} %to web icons
+\usepackage[utf8]{inputenc} % for accentuation
 %\usepackage[T1]{fontenc}
 
 \titleformat{\section} %{command}[shape]
@@ -13,11 +14,12 @@
 {} %label
 {0em} %sep (is the horizontal separation between label and title body and it must be a length and not be empty)
 {}[\titlerule] %{before code}[after code]  is code preceding/following the title body
+% to check the options: https://www.overleaf.com/learn/latex/Sections_and_chapters
 
 \titleformat{\subsection}
 {\sf\large}
-{$\bullet$} %dist from the margin
-{.5em} %dist from the bullet to text
+{$\bullet$} %dist from the margin ex.: {\hspace{.25in}}
+{1em} %dist from the bullet to text
 {}[]
 
 \titleformat{\subsubsection}[runin]
@@ -27,7 +29,7 @@
 {}[]
 
 \titlespacing{\subsubsection}
-{0em}{1em}{1em} %{dist to the margin}{between the subsubs}{runin}
+{0em}{.5em}{1em} %{dist to the margin}{between the subsubs}{runin}
 
 
 \renewcommand{\maketitle}{
@@ -54,12 +56,18 @@
 \vspace{2.5mm} %2,5mm vertical space
 
 \section{Nice to Meet You!}
-As a physicist and banking trader I learned to combine my analytical knowledge with the understanding of the business
-and corporate world. Within this select group of professionals I worked with, the feedback I received highly prized my
-communication, relational, and negotiation skills as well as my ability to work within an environment of emerging
-technologies and their solutions. Now, I'm striving to succeed in a Computer Science course as a complement to my
-career shift plan.
- 
+\begin{spacing}{1.1}
+
+    I'm intending to become a ``Y tech professional'', that one with a good balance between
+    soft and hard skills. Better saying, I'm eager to combine my previous business 
+    experience as a banking trader with the knowledge I'm building up as a Computer 
+    Science student.   
+    The feedback I received working in financial markets highly prized my communication 
+    and relational skills as well as my ability to work in so different roles - behind 
+    the computer or in a client meeting.
+
+\end{spacing}
+
 \section{Education}
 \subsection{Universidade de S\~ao\ Paulo (USP) - S\~ao\ Paulo, Brazil \hfill 2017/2021}
 Bachelor's Degree in Computer Science
@@ -77,16 +85,16 @@ Bachelor's Degree in Physics
 
 \subsection{Languages}
 \subsubsection{Programming}
-C, Java\   \   \ding{72} , \ding{72}\ding{72}\ding{72} 
+C, Java, Kotlin\   \   \ding{72} , \ding{72}\ding{72}\ding{72}, \ding{72}\ding{72} 
 
 \subsubsection{Scripting}
 Python, JavaScript\   \   \ding{72}\ding{72}\ding{72} , \ding{72}
 
 \subsubsection{Markup}
-HTML, {\LaTeX}   \   \ding{72}\ding{72} , \ding{72}\ding{72} 
+HTML, XML, {\LaTeX}   \   \ding{72}\ding{72} , \ding{72}\ding{72}, \ding{72}\ding{72} 
 
 \subsubsection{Database Management}
-SQL   \   \ding{72}
+SQL, JSON, Cypher   \   \ding{72}\ding{72}\ding{72}, \ding{72}\ding{72}, \ding{72}\ding{72}
 
 \section{Work Experience}
 \subsection{Standard Chartered Bank - Sales Trader for Global Corporates \hfill 2012/2014}
